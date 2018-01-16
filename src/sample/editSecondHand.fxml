@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.editSecondHandController">
+    <children>
+        <Label layoutX="18.0" layoutY="27.0" prefHeight="27.0" prefWidth="136.0" text="Category" />
+        <ChoiceBox fx:id="Type" layoutX="173.0" layoutY="21.0" prefHeight="25.0" prefWidth="151.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Kitchen" />
+                    <String fx:value="Living Room" />
+                    <String fx:value="Office" />
+                    <String fx:value="Garden" />
+                    <String fx:value="Bedroom" />
+                    <String fx:value="Toilet" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <Label layoutX="14.0" layoutY="63.0" prefHeight="25.0" prefWidth="100.0" text="Address" />
+        <TextField fx:id="Address" layoutX="173.0" layoutY="63.0" prefHeight="39.0" prefWidth="151.0" />
+        <Label layoutX="15.0" layoutY="109.0" prefHeight="25.0" prefWidth="130.0" text="Manufacture" />
+        <TextField fx:id="Manufacture" layoutX="173.0" layoutY="109.0" prefHeight="39.0" prefWidth="151.0" />
+        <Label layoutX="18.0" layoutY="155.0" prefHeight="17.0" prefWidth="82.0" text="picture" />
+        <Label layoutX="18.0" layoutY="242.0" prefHeight="25.0" prefWidth="315.0" text="In case of lending the deposit will be the  price" />
+        <Label layoutX="23.0" layoutY="200.0" prefHeight="17.0" prefWidth="82.0" text="price" />
+        <TextField fx:id="price" layoutX="173.0" layoutY="196.0" prefHeight="25.0" prefWidth="56.0" />
+        <Button layoutX="331.0" layoutY="151.0" mnemonicParsing="false" onAction="#UploadImage" prefHeight="25.0" prefWidth="82.0" text="Upload" />
+        <Button fx:id="AddProduct" layoutX="14.0" layoutY="307.0" mnemonicParsing="false" onAction="#finish" prefHeight="39.0" prefWidth="159.0" text="UpdateProduct" />
+        <TextField fx:id="Picture" layoutX="173.0" layoutY="151.0" prefHeight="25.0" prefWidth="151.0" />
+        <Label layoutX="18.0" layoutY="280.0" prefHeight="17.0" prefWidth="107.0" text="Name of Product" />
+        <TextField fx:id="nameof" layoutX="174.0" layoutY="276.0" />
+        <ImageView fx:id="imageV" fitHeight="124.0" fitWidth="232.0" layoutX="434.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="333.0" layoutY="115.0" prefHeight="27.0" prefWidth="151.0" text="Manufacture Year" />
+        <TextField fx:id="yearMan" layoutX="513.0" layoutY="109.0" prefHeight="39.0" prefWidth="130.0" />
+        <TextArea fx:id="desc" layoutX="433.0" layoutY="194.0" prefHeight="150.0" prefWidth="245.0" />
+        <Label layoutX="433.0" layoutY="159.0" text="Description" />
+    </children>
+</AnchorPane>

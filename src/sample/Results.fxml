@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultsController">
+   <children>
+      <ListView fx:id="ListOfResults" layoutX="38.0" layoutY="60.0" onMouseClicked="#mousedKlick" prefHeight="241.0" prefWidth="200.0" />
+      <Label layoutX="300.0" layoutY="67.0" prefHeight="17.0" prefWidth="98.0" text="Package Name" />
+      <ChoiceBox fx:id="products" layoutX="274.0" layoutY="228.0" onAction="#productShow" prefWidth="150.0" />
+      <Label layoutX="89.0" layoutY="35.0" prefHeight="17.0" prefWidth="98.0" text="Results" />
+      <TextField fx:id="packname" layoutX="274.0" layoutY="95.0" />
+      <Label layoutX="282.0" layoutY="206.0" prefHeight="17.0" prefWidth="116.0" text="Products" />
+      <Button layoutX="441.0" layoutY="228.0" mnemonicParsing="false" onAction="#WatchProd" prefHeight="25.0" prefWidth="149.0" text="Watch Product" />
+      <Label fx:id="pric" layoutX="282.0" layoutY="164.0" prefHeight="33.0" prefWidth="303.0" text="Price :" />
+      <Label layoutX="466.0" layoutY="67.0" prefHeight="17.0" prefWidth="98.0" text="Package Owner" />
+      <TextField fx:id="UserName" layoutX="441.0" layoutY="95.0" />
+      <Button onAction="#order" fx:id="Order" layoutX="315.0" layoutY="311.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="139.0" text="Order" />
+      <Label fx:id="LogInFirst" layoutX="315.0" layoutY="275.0" prefHeight="17.0" prefWidth="218.0" text="To Make an Order You Must Log In First" />
+      <Label fx:id="Available" layoutX="316.0" layoutY="361.0" prefHeight="17.0" prefWidth="251.0" text="This Produt Is Not Available In Your Dates" />
+      <ChoiceBox fx:id="OrderType" layoutX="45.0" layoutY="306.0" onAction="#OrderTyp" prefHeight="25.0" prefWidth="116.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="All" />
+               <String fx:value="For Rent" />
+               <String fx:value="For Lending" />
+               <String fx:value="Trade in" />
+            </FXCollections>
+         </items>
+      </ChoiceBox>
+      <Button fx:id="SortByPrice" layoutX="46.0" layoutY="344.0" mnemonicParsing="false" onAction="#sortByPrice" prefHeight="25.0" prefWidth="116.0" text="Sort by price" />
+      <Label fx:id="orderType" layoutX="282.0" layoutY="136.0" prefHeight="25.0" prefWidth="190.0" text="Order type : " />
+      <ChoiceBox fx:id="PackagesOfUser" layoutX="475.0" layoutY="319.0" prefHeight="25.0" prefWidth="116.0" />
+      <Label fx:id="PackForTrade" layoutX="475.0" layoutY="298.0" prefHeight="17.0" prefWidth="116.0" text="Package to trade in" />
+      <Button layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#home" text="Back" />
+   </children>
+</AnchorPane>

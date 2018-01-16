@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" fx:controller="sample.SignUpController" minWidth="-Infinity" prefHeight="449.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="Home" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" text="Home" onAction="#home" />
+      <Label layoutX="27.0" layoutY="88.0" prefHeight="17.0" prefWidth="102.0" text="Username" />
+      <Label layoutX="27.0" layoutY="190.0" prefHeight="17.0" prefWidth="65.0" text="First Name" />
+      <Label layoutX="26.0" layoutY="139.0" prefHeight="17.0" prefWidth="55.0" text="Password" />
+      <Label layoutX="26.0" layoutY="299.0" prefHeight="17.0" prefWidth="95.0" text="Email Address" />
+      <Label layoutX="27.0" layoutY="243.0" prefHeight="17.0" prefWidth="65.0" text="Last Name" />
+      <Label layoutX="350.0" layoutY="136.0" prefHeight="17.0" prefWidth="44.0" text="Phone" />
+      <Label layoutX="301.0" layoutY="85.0" prefHeight="17.0" prefWidth="73.0" text="Address" />
+      <Label layoutX="301.0" layoutY="183.0" prefHeight="25.0" prefWidth="55.0" text="Picture" />
+      <Label layoutX="297.0" layoutY="243.0" prefHeight="17.0" prefWidth="81.0" text="Date Of Birth " />
+      <Label layoutX="349.0" layoutY="299.0" prefHeight="17.0" prefWidth="110.0" text="PayPal Username" />
+      <TextField fx:id="Username_Input" layoutX="114.0" layoutY="84.0" prefHeight="25.0" prefWidth="173.0" />
+       <PasswordField fx:id="Password_Input" layoutX="114.0" layoutY="135.0" prefHeight="25.0" prefWidth="173.0" />
+      <TextField fx:id="Firstname_Input" layoutX="114.0" layoutY="186.0" prefHeight="25.0" prefWidth="173.0" />
+      <TextField fx:id="Lastname_Input" layoutX="114.0" layoutY="239.0" prefHeight="25.0" prefWidth="173.0" />
+      <TextField fx:id="Email_Input" layoutX="114.0" layoutY="295.0" prefHeight="25.0" prefWidth="173.0" />
+       <TextField fx:id="Address_Input" layoutX="395.0" layoutY="82.0" prefHeight="29.0" prefWidth="194.0" />
+       <TextField fx:id="Phone_Input" layoutX="397.0" layoutY="132.0" prefHeight="25.0" prefWidth="187.0" />
+       <Button  fx:id="IMGupload" layoutX="404.0" layoutY="186.0" mnemonicParsing="false" text="Upload" onAction="#imgButton"/>
+      <DatePicker fx:id="Birthday_Input" layoutX="404.0" layoutY="242.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="Paypal_Input" layoutX="459.0" layoutY="295.0" prefHeight="25.0" prefWidth="173.0" />
+
+      <ImageView fitHeight="60.0" fitWidth="110.0" layoutX="281.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <Glow />
+         </effect>
+         <image>
+            <Image url="@../paypal_PNG7.png" />
+         </image></ImageView>
+      <ImageView fitHeight="29.0" fitWidth="33.0" layoutX="306.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../old_phone-512.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Finish_btn" layoutX="424.0" layoutY="338.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="165.0" text="Create Account" textAlignment="CENTER" textOverrun="CLIP" onAction="#Signup">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="43.0" layoutY="24.0" prefHeight="37.0" prefWidth="187.0" text="Create an account">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

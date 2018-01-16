@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditProducts">
+    <children>
+        <Label layoutX="14.0" layoutY="59.0" prefHeight="33.0" prefWidth="59.0" text="Package :" />
+        <ChoiceBox fx:id="PackageList" layoutX="89.0" layoutY="63.0" onAction="#ProductChoose" prefHeight="25.0" prefWidth="210.0" />
+        <Label layoutX="14.0" layoutY="118.0" prefHeight="33.0" prefWidth="72.0" text="Product : " />
+        <ChoiceBox fx:id="ProductList" layoutX="89.0" layoutY="122.0" prefHeight="25.0" prefWidth="210.0" />
+        <Button layoutX="98.0" layoutY="200.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="175.0" text="Edit Product" />
+      <Button layoutX="98.0" layoutY="243.0" mnemonicParsing="false" onAction="#DeleteProductFromPuc" prefHeight="25.0" prefWidth="175.0" text="Delete Prouct from package" />
+      <Button layoutX="98.0" layoutY="285.0" mnemonicParsing="false" onAction="#DeletePackage" prefHeight="25.0" prefWidth="175.0" text="Delete Package" />
+      <Button layoutX="98.0" layoutY="332.0" mnemonicParsing="false" onAction="#done" prefHeight="25.0" prefWidth="175.0" text="Done" />
+      <Button fx:id="Home" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#home" text="Home" />
+      <Button  layoutX="98.0" layoutY="163.0" mnemonicParsing="false" onAction="#editPack" prefHeight="25.0" prefWidth="175.0" text="Edit Package" />
+    </children>
+</AnchorPane>

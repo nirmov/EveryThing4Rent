@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.editVehicleControler">
+    <children>
+        <TextField fx:id="id" layoutX="127.0" layoutY="58.0" />
+        <Label layoutX="14.0" layoutY="64.0" prefHeight="17.0" prefWidth="83.0" text="Vehicle Name" />
+        <Label layoutX="15.0" layoutY="113.0" prefHeight="17.0" prefWidth="68.0" text="Price" />
+        <TextField fx:id="price" layoutX="127.0" layoutY="107.0" />
+        <TextField fx:id="address" layoutX="127.0" layoutY="155.0" />
+        <TextField fx:id="model" layoutX="127.0" layoutY="252.0" prefHeight="32.0" prefWidth="150.0" />
+        <TextField fx:id="num_owners" layoutX="127.0" layoutY="341.0" prefHeight="39.0" prefWidth="149.0" />
+        <Label layoutX="15.0" layoutY="159.0" prefHeight="17.0" prefWidth="68.0" text="Address" />
+        <Label layoutX="328.0" layoutY="57.0" prefHeight="32.0" prefWidth="116.0" text="Upload Photo" />
+        <Label layoutX="14.0" layoutY="206.0" prefHeight="17.0" prefWidth="99.0" text="Manufacture" />
+        <Label layoutX="21.0" layoutY="259.0" prefHeight="17.0" prefWidth="68.0" text="Model" />
+        <Label layoutX="20.0" layoutY="303.0" prefHeight="17.0" prefWidth="68.0" text="Year" />
+        <Label layoutX="14.0" layoutY="352.0" prefHeight="17.0" prefWidth="116.0" text="Number of owners" />
+        <ImageView fx:id="vehicle_img" fitHeight="126.0" fitWidth="186.0" layoutX="350.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+            <effect>
+                <Shadow />
+            </effect>
+        </ImageView>
+        <Button fx:id="uploadButton" layoutX="472.0" layoutY="61.0" mnemonicParsing="false" onAction="#upload_img" text="Upload" />
+        <Button layoutX="40.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+        <TextField fx:id="img_path" layoutX="359.0" layoutY="101.0" />
+        <Button fx:id="AddProdcut" layoutX="378.0" layoutY="357.0" mnemonicParsing="false" onAction="#submit_vehicle" prefHeight="25.0" prefWidth="149.0" text="Update" />
+        <ChoiceBox fx:id="manufacture" layoutX="127.0" layoutY="202.0" prefWidth="150.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Mazda" />
+                    <String fx:value="Subaru" />
+                    <String fx:value="Honda" />
+                    <String fx:value="Mercedes" />
+                    <String fx:value="Hyundai" />
+                    <String fx:value="BMW" />
+                    <String fx:value="Audi" />
+                    <String fx:value="Toyota" />
+                    <String fx:value="Jeep" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <ChoiceBox fx:id="manYear" layoutX="127.0" layoutY="299.0" prefWidth="150.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="1999" />
+                    <String fx:value="2000" />
+                    <String fx:value="2001" />
+                    <String fx:value="2002" />
+                    <String fx:value="2003" />
+                    <String fx:value="2004" />
+                    <String fx:value="2005" />
+                    <String fx:value="2006" />
+                    <String fx:value="2007" />
+                    <String fx:value="2008" />
+                    <String fx:value="2009" />
+                    <String fx:value="2010" />
+                    <String fx:value="2011" />
+                    <String fx:value="2012" />
+                    <String fx:value="2013" />
+                    <String fx:value="2014" />
+                    <String fx:value="2015" />
+                    <String fx:value="2016" />
+                    <String fx:value="2017" />
+                    <String fx:value="2018" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <Label layoutX="328.0" layoutY="295.0" prefHeight="17.0" prefWidth="99.0" text="Discription" />
+        <TextArea fx:id="discription" layoutX="433.0" layoutY="280.0" prefHeight="64.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>
