@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchController">
+   <children>
+      <ChoiceBox fx:id="Area" layoutX="82.0" layoutY="188.0" prefHeight="25.0" prefWidth="174.0">
+       <items>
+           <FXCollections fx:factory="observableArrayList">
+               <String fx:value="North" />
+               <String fx:value="Center" />
+               <String fx:value="Jerusalem" />
+               <String fx:value="Beer-Sheva" />
+               <String fx:value="South" />
+           </FXCollections>
+       </items>
+   </ChoiceBox>
+      <ChoiceBox fx:id="ProductType" layoutX="333.0" layoutY="188.0" onAction="#ProductChose" prefHeight="25.0" prefWidth="174.0">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="RealEstate" />
+                  <String fx:value="Second Hand" />
+                  <String fx:value="Pets" />
+                  <String fx:value="Vehicle" />
+              </FXCollections>
+          </items>
+      </ChoiceBox>
+      <ChoiceBox fx:id="SecondSearch" layoutX="333.0" layoutY="275.0" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="CheckOut" layoutX="335.0" layoutY="101.0" />
+      <DatePicker fx:id="Checkin" layoutX="82.0" layoutY="101.0" />
+      <Button fx:id="SearchButton" layoutX="225.0" layoutY="327.0" mnemonicParsing="false" onAction="#searchFunc" prefHeight="25.0" prefWidth="150.0" text="Search" />
+      <Label layoutX="130.0" layoutY="69.0" prefHeight="17.0" prefWidth="150.0" text="Start date" />
+      <Label layoutX="366.0" layoutY="69.0" prefHeight="17.0" prefWidth="111.0" text="End date" />
+      <Label layoutX="142.0" layoutY="153.0" prefHeight="17.0" prefWidth="83.0" text="Area" />
+      <Label layoutX="371.0" layoutY="153.0" prefHeight="17.0" prefWidth="97.0" text="Type Of Product" />
+      <Label fx:id="SecondLabel" layoutX="367.0" layoutY="235.0" prefHeight="17.0" prefWidth="202.0" text="Amount Of People" />
+      <ChoiceBox fx:id="FirstSearch" layoutX="82.0" layoutY="275.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="FirstLabel" layoutX="104.0" layoutY="235.0" prefHeight="17.0" prefWidth="202.0" text="Type Of Estate" />
+       <Button fx:id="home" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#home" text="Home" />
+   </children>
+</AnchorPane>
